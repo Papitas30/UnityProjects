@@ -1,0 +1,8 @@
+{
+  "name": "OccaSoftware.Buto",
+  "references": [
+    "Unity.RenderPipelines.Universal.Runtime",
+    "Unity.RenderPipelines.Core.Runtime"
+  ],
+  "allowUnsafeCode": true
+}
