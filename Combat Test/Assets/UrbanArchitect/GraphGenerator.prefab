@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7125895423594944499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8312667125654297955}
+  - component: {fileID: -4421653306587060273}
+  - component: {fileID: -8793471755426526111}
+  - component: {fileID: -6771158034475604609}
+  m_Layer: 0
+  m_Name: GraphGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8312667125654297955
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125895423594944499}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-4421653306587060273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125895423594944499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cee953f3fbc4949966e5bf58c79604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layers: []
+  positionsOfNodes: []
+  NormalListOfNodes: []
+  CheckedPoints: []
+  RoadAndBuildingsLayer: 3
+  MajorRoad: {fileID: 0}
+  MinorRoad: {fileID: 0}
+  Intersection3WayMinor: {fileID: 0}
+  Intersection4WayMinor: {fileID: 0}
+  CornerMinor: {fileID: 0}
+  StraightPieceMinor: {fileID: 0}
+  BaseMaterial: {fileID: 0}
+  Center:
+  - {fileID: 7921905956812815625, guid: 1fa293de2af50cd4094417dcfe3026ca, type: 3}
+  - {fileID: 3909691469802121875, guid: 6aec105e805da164f9c2680a8aae67f1, type: 3}
+  - {fileID: 6099463194927935829, guid: b7ecc739691af9149abd7a863e0e9c1a, type: 3}
+  - {fileID: 3018900037998783436, guid: 8c930c3e3c9b5f04b87cda4904c1f377, type: 3}
+  - {fileID: 6734407881873692054, guid: 742a8cda9b886bb4d8c1190184390f91, type: 3}
+  - {fileID: 2134483399183372473, guid: 57f9da654b4063d44a1d499033304b78, type: 3}
+  CenterBuildingDensity: 300
+  Middle:
+  - {fileID: 7921905956812815625, guid: 1fa293de2af50cd4094417dcfe3026ca, type: 3}
+  - {fileID: 3909691469802121875, guid: 6aec105e805da164f9c2680a8aae67f1, type: 3}
+  - {fileID: 6099463194927935829, guid: b7ecc739691af9149abd7a863e0e9c1a, type: 3}
+  - {fileID: 3018900037998783436, guid: 8c930c3e3c9b5f04b87cda4904c1f377, type: 3}
+  - {fileID: 6734407881873692054, guid: 742a8cda9b886bb4d8c1190184390f91, type: 3}
+  - {fileID: 2134483399183372473, guid: 57f9da654b4063d44a1d499033304b78, type: 3}
+  MiddleBuildingDensity: 300
+  OuterMiddle:
+  - {fileID: 7921905956812815625, guid: 1fa293de2af50cd4094417dcfe3026ca, type: 3}
+  - {fileID: 3909691469802121875, guid: 6aec105e805da164f9c2680a8aae67f1, type: 3}
+  - {fileID: 6099463194927935829, guid: b7ecc739691af9149abd7a863e0e9c1a, type: 3}
+  - {fileID: 3018900037998783436, guid: 8c930c3e3c9b5f04b87cda4904c1f377, type: 3}
+  - {fileID: 6734407881873692054, guid: 742a8cda9b886bb4d8c1190184390f91, type: 3}
+  - {fileID: 2134483399183372473, guid: 57f9da654b4063d44a1d499033304b78, type: 3}
+  OuterMiddleBuildingDensity: 120
+  Suburban:
+  - {fileID: 7921905956812815625, guid: 1fa293de2af50cd4094417dcfe3026ca, type: 3}
+  - {fileID: 3909691469802121875, guid: 6aec105e805da164f9c2680a8aae67f1, type: 3}
+  - {fileID: 6099463194927935829, guid: b7ecc739691af9149abd7a863e0e9c1a, type: 3}
+  - {fileID: 3018900037998783436, guid: 8c930c3e3c9b5f04b87cda4904c1f377, type: 3}
+  - {fileID: 6734407881873692054, guid: 742a8cda9b886bb4d8c1190184390f91, type: 3}
+  - {fileID: 2134483399183372473, guid: 57f9da654b4063d44a1d499033304b78, type: 3}
+  SuburbanBuildingDensity: 120
+  mapSize: 40
+  Sealevel: -100
+  DesiredRoadGrade: 0
+  PathFindAroundSteepAreas: 0
+  districtMultiplier: 0.3
+  finished: 0
+--- !u!114 &-8793471755426526111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125895423594944499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43093e3a6da2cf418dfd242f792a6bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapSize: 300
+  seed: 13
+  RandomSeed: 0
+  maxDegreeInCurves: 10
+  branchingProbability: 0.075
+  crossingDeletionProbability: 0.1
+  maxMajorRoad: 2000
+  maxMinorRoad: 10000
+  majorThickness: 2.5
+  minorThickness: 0.9
+  sidewalkThickness: 0.5
+  minBuildHeight: 2
+  maxBuildHeight: 15
+  drawRoadNodes: 0
+  drawRoads: 1
+  drawBlockNodes: 0
+  drawBlocks: 1
+  drawThinnedBlocks: 0
+  drawConvexBlocks: 0
+  drawConcaveBlocks: 0
+  drawTriangulatedMeshes: 0
+  drawBoundingBoxes: 0
+  drawLots: 1
+  genDone: 0
+--- !u!114 &-6771158034475604609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7125895423594944499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e0961e2fe5e2dd4982fe3c329373204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 0}
+  CurrentCurve: {fileID: 0}
+  j: 0
