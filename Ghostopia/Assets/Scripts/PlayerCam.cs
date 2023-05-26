@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
+
 using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
     public float sensX;
     public float sensY;
-    float mouseX;
-    float mouseY;
+    private float mouseX;
+    private float mouseY;
     public Transform orientation;
-
-    float xRotation;
-    float yRotation;
+    private float xRotation;
+    private float yRotation;
 
     private void Start()
     {
@@ -23,20 +20,18 @@ public class PlayerCam : MonoBehaviour
     {
 
         // get mouse input
-         mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-         mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+        mouseX = Input.GetAxisRaw("Mouse X") * sensX;
+        mouseY = Input.GetAxisRaw("Mouse Y") * sensY;
         yRotation += mouseX;
 
         xRotation -= mouseY;
-
-    }
-    public void FixedUpdate()
-    {
-       
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+    }
+    public void LateUpdate()
+    {
 
         // rotate cam and orientation
-        transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        transform.rotation = Quaternion.Euler(xRotation, 0, 0);
         orientation.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }

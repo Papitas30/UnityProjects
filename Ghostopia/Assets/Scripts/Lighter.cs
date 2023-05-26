@@ -1,46 +1,37 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Lighter : MonoBehaviour
 {
     public GameObject lighter;
     public GameObject flames;
-    public bool isOff;
+    
 
-    public bool isOn;
+    private bool isOn;
 
-
-
-    void Start()
+    private void Start()
     {
         isOn = false;
-        isOff = true;
+        
         flames.SetActive(false);
     }
 
-
-
-
-    void Update()
+    private void Update()
     {
-        if(Input.GetButtonDown("Fire1") && lighter.activeInHierarchy && isOff)
+        if (Input.GetButtonDown("Fire1") && lighter.activeInHierarchy && !isOn)
         {
             flames.SetActive(true);
-        
+
             isOn = true;
-            isOff = false;
+            
         }
 
         else if (Input.GetButtonDown("Fire1") && lighter.activeInHierarchy && isOn)
         {
             flames.SetActive(false);
-    
+
             isOn = false;
-            isOff = true;
+           
         }
-
-
 
     }
 }
