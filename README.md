@@ -5,6 +5,7 @@
 
  ## Finished games
  Mouse Drift
+ Ghostopia
  
  ## Projects im actively working on
  Ghostopia 2.0  
@@ -14,7 +15,7 @@
  Fire Daps  
  Mira Diary  
  Bettter Slope+  
- Ghostopia
+ 
  
  
  
