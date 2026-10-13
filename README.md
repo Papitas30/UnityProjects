@@ -10,7 +10,7 @@
  Ghostopia 2.0  
  FPS Game
 
- ## Abandoned projects
+ ## Unfinished projects
  Fire Daps  
  Mira Diary  
  Bettter Slope+  
